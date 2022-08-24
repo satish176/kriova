@@ -10,7 +10,7 @@ export default function Home() {
   const username = localStorage.getItem("username");
   useEffect(() => {
     const fetchUser = async () => {
-      await Axios.get(`http://localhost:4000/api/${username}`).then(
+      await Axios.get(`https://kriova-infotech.herokuapp.com/api/${username}`).then(
         (response, err) => {
           if (err) console.log(err);
           setUser(response.data.info);
