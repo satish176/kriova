@@ -39,7 +39,7 @@ export default function ForgetPassword() {
       alert("OTP verified");
       try {
         if (password.current.value === passwordAgain.current.value) {
-          await Axios.post("http://localhost:4000/api/forgot", {
+          await Axios.post("https://kriova-infotech.herokuapp.com/api/forgot", {
             password: password.current.value,
             confirmpassword: passwordAgain.current.value,
           }).then((response) => {
