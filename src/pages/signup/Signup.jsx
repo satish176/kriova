@@ -12,7 +12,7 @@ function Signup() {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:4000/api/signup", {
+      await Axios.post("https://kriova-infotech.herokuapp.com/api/signup", {
         employeename: username.current.value,
         email: email.current.value,
         password: password.current.value,
