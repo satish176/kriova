@@ -46,7 +46,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <button onClick={logout}>
+            <button onClick={logout} style={{ backgroundColor: "#1775ee",border:"none" }}>
               <i className="fa fa-sign-out-alt fa-2x" />
             </button>
           </li>
