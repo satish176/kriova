@@ -9,7 +9,7 @@ function Login() {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await Axios.post("http://localhost:4000/api/login", {
+      await Axios.post("https://kriova-infotech.herokuapp.com/api/login", {
         email: email.current.value,
         password: password.current.value,
       }).then((response) => {
